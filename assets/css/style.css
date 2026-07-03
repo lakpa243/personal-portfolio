@@ -6,3 +6,33 @@ header{
     background-position: center;
     background-blend-mode: overlay;
 }
+
+.hero-section{
+    width: 100%;
+    background-color: rgba(95, 95, 222, 0.8) !important;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/textures/dotted_texture.png');
+    background-size: cover repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: #eeeeee;
+}
+
+.hero-section .lakpa-bio{
+    font-size: 1.2rem !important;
+}
+.hero-section .hero-texture{
+    opacity: 0.5;
+}
+.hero-section .hero-content{
+    position: relative;
+}
+
+.lakpa-image{
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    .hero-section .hero-texture{
+        display: none;
+    }
+}
