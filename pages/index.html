@@ -9,7 +9,7 @@
   <!-- Bootstrap Icons CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
   <!-- Swiper CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Adding custom CSS file for styling -->
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
@@ -45,7 +45,7 @@
               </li>
             </ul>
             <span class="d-flex" role="search">
-              <button class="btn btn-danger" type="submit">Download CV</button>
+              <button class="btn btn-custom" type="submit">Download CV</button>
             </span>
           </div>
         </div>
@@ -56,22 +56,24 @@
   <!-- Hero section Bio Banner -->
   <section class="py-5 hero-section">
     <div class="hero-texture">
-    <div class="position-absolute top-0 end-0">
-      <img src="../assets/images/textures/hero_right_top_curveline.png" class="img-texture" alt="Background Image">
-    </div>
-    <div class="position-absolute left-0">
-      <img src="../assets/images/textures/left_bottom_curveline.png" class="img-texture" alt="Background Image">
-    </div>
+      <div class="position-absolute top-0 end-0">
+        <img src="../assets/images/textures/hero_right_top_curveline.png" class="img-texture" alt="Background Image">
+      </div>
+      <div class="position-absolute left-0">
+        <img src="../assets/images/textures/left_bottom_curveline.png" class="img-texture" alt="Background Image">
+      </div>
     </div>
     <div class="container hero-content">
       <div class="row align-items-center">
         <div class="col-md-7">
-          <h1 class="display-4 fw-bold"><span class="text-white">Hello, I'm <br>Lakpa Sherpa</span> <br>a Front-end developer</h1>
-          <p class="lead lakpa-bio">I am a Front-End Developer. My expertise lies in building clean, performant websites using
+          <h1 class="display-4 fw-bold"><span class="text-white">Hello, I'm <br>Lakpa Sherpa</span> <br>a Front-end
+            developer</h1>
+          <p class="lead lakpa-bio">I am a Front-End Developer. My expertise lies in building clean, performant websites
+            using
             HTML5, CSS3, and JavaScript. I specialize in modern styling frameworks like Tailwind CSS and Bootstrap,
             while efficiently managing legacy projects with jQuery. I am currently expanding my technical toolkit by
             mastering React to build more dynamic, component-driven applications. </p>
-          <a href="#" class="btn btn-primary btn-md">View Portfolio</a> 
+          <a href="#" class="btn btn-custom btn-md">View Portfolio</a>
           <a href="#" class="btn btn-outline-light btn-md">
             <i class="bi bi-play">My Intro</i> </a>
         </div>
@@ -82,61 +84,110 @@
     </div>
   </section>
 
-  <!-- Skills Section -->  
+  <!-- Skills Section -->
   <section class="skills py-5">
     <div class="container">
-      <div class="skills-title text-center mb-4" >
+      <div class="skills-title text-center mb-4">
         <h2 class="fw-bold">My Skills & Toolkits</h2>
-        <p>I build seamless, user-centric experiences by bridging the gap between design and functionality. My workflow is driven by clean code, intuitive interfaces, and a commitment to performance.</p>
+        <p>I build seamless, user-centric experiences by bridging the gap between design and functionality. My workflow
+          is driven by clean code, intuitive interfaces, and a commitment to performance.</p>
       </div>
-  <div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide"><div class="card p-3">
-        <img src="../assets/images/icons/design_tools.png" alt="Design Tools">
-        <p>Tools I use for prototype design includes <strong>Adobe Creative Suite and Figma</strong></p>
-      </div></div>
-      <div class="swiper-slide"><div class="card p-3">
-        <img src="../assets/images/icons/CSS-tools.png" alt="Design Tools">
-        <p>The HTML is visually appealing and responsive after using <strong>CSS3, Bootstrap or Tailwind CSS </strong>.</p>
-      </div></div>
-      <div class="swiper-slide"><div class="card p-3">
-        <img src="../assets/images/icons/programming-tools.png" alt="Design Tools">
-        <p>Along with JavaScript, I am learning <strong>React</strong> to enhance my web development capabilities.</p>
-      </div></div>
-      <div class="swiper-slide"><div class="card p-3">
-        <img src="../assets/images/icons/seo-tools.png" alt="Design Tools">
-        <p>To track and optimize my website's performance, I utilize <strong>Google Analytics and Search Console</strong>.</p>
-      </div></div>
-    </div>
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-</div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card p-3">
+              <img src="../assets/images/icons/design_tools.png" alt="Design Tools">
+              <p>Tools I use for prototype design includes <strong>Adobe Creative Suite and Figma</strong></p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-3">
+              <img src="../assets/images/icons/CSS-tools.png" alt="Design Tools">
+              <p>The HTML is visually appealing and responsive after using <strong>CSS3, Bootstrap or Tailwind CSS
+                </strong>.</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-3">
+              <img src="../assets/images/icons/programming-tools.png" alt="Design Tools">
+              <p>Along with JavaScript, I am learning <strong>React</strong> to enhance my web development capabilities.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card p-3">
+              <img src="../assets/images/icons/seo-tools.png" alt="Design Tools">
+              <p>To track and optimize your website's performance, I utilize <strong>Google Analytics and Search
+                  Console</strong>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
 
     </div>
   </section>
 
+  <!-- About Me Section -->
+  <section class="about-section">
+       <div class="container">
+        <div class="row align-items-center">
+            <!-- Left Column: Image -->
+            <div class="col-md-6 text-center">
+                <div class="img-wrapper">
+                    <div class="img-circle">
+                        <!-- Replace with your generated image -->
+                        <img src="../assets/images/about-me-portrate-left.png" alt="Developer" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column: Content -->
+            <div class="col-md-6">
+                <h6 class="text-primary text-uppercase">About Me</h6>
+                <h1 class="fw-bold">Code that scales, <br> experiences that connect.</h1>
+                <p class="text-muted">I transform technical complexity into intuitive, scalable digital solutions.
+My work sits at the intersection of robust engineering and human-centric design.</p>
+                
+                <div class="info-card card-orange">
+                    <h5>Lets Build Something Amazing Together</h5>
+                    <p class="mb-0">Great projects start with a conversation. Let’s discuss your needs, define the roadmap, and start building a solution that delivers real value</p>
+                </div>
+                
+                <div class="info-card card-purple">
+                    <h5>Experience the Difference</h5>
+                    <p class="mb-0">Beyond just making things work, I focus on the 'how.' Experience clean, maintainable architecture that ensures your platform stays fast and secure for years to come.</p>
+                </div>
+                
+                <button class="btn btn-custom mt-3">Download CV →</button>
+            </div>
+        </div>
+    </div>
+</section>
+
   <script src="../assets/bootstrap-5.3.8/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Swiper JS -->
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,      // How many cards to show
-    spaceBetween: 30,      // Space between cards
-    loop: true,            // Makes it infinite
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      320: { slidesPerView: 1 }, // Show 1 card on mobile
-      768: { slidesPerView: 2 }, // Show 2 on tablet
-      1024: { slidesPerView: 3 } // Show 3 on desktop
-    }
-  });
+  <!-- Swiper JS for skill section-->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,      // How many cards to show
+      spaceBetween: 30,      // Space between cards
+      loop: true,            // Makes it infinite
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        320: { slidesPerView: 1 }, // Show 1 card on mobile
+        768: { slidesPerView: 2 }, // Show 2 on tablet
+        1024: { slidesPerView: 3 } // Show 3 on desktop
+      }
+    });
 
 
-</script>
+  </script>
 
 </body>
 

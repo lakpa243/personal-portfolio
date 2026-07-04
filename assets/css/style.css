@@ -24,6 +24,18 @@ header .navbar{
     color: #eeeeee;
 }
 
+/* Button css for all buttons */
+.btn-custom { 
+    background-color: #ff9f1c; 
+    color: white; 
+    padding: 10px 25px; 
+    border-radius: 50px; 
+    border: none; }
+    .btn-custom:hover { 
+        background-color: #ff7f50; 
+        color: white; 
+        transition: background-color 0.3s ease-in-out;}
+
 .hero-section{
     overflow: hidden;
 }
@@ -76,12 +88,61 @@ header .navbar{
     margin: 0px auto;
 }
 
+/* About Section css */
+.about-section  {
+    padding: 80px 0; background-color: #fcfcfc;
+    position: relative;
+    padding: 80px 40px;
+
+    /* Two background images */
+    background-image:
+        url("../images/textures/about-section-bg-texture-right.png"),
+        url("../images/textures/about-section-bg-texture-left.png");
+
+    /* Position each image */
+    background-position:
+        top right,
+        bottom left;
+
+    /* Prevent repeating */
+    background-repeat:
+        no-repeat,
+        no-repeat;
+
+    /* Individual sizes */
+    background-size:
+        350px,
+        320px;
+
+    overflow: hidden;
+}
+
+/* Ensure all content stays above */
+.about-section > * {
+    position: relative;
+    z-index: 1;
+}
+
+        .img-wrapper { position: relative; display: inline-block; }
+        .info-card { background: #fff; padding: 20px; border-radius: 10px; margin-bottom: 15px; border-left: 5px solid transparent; }
+        .card-orange { background-color: #fff2e6; }
+        .card-purple { background-color: #f3eef8; }
+        
+
+    
 
 /* Media Queries for responsive design  */
 
 @media (max-width: 768px) {
     .hero-section .hero-texture{
         display: none;
+    }
+
+    .about-section {
+        background-size: 180px, 180px;
+        background-position:
+            top right,
+            bottom left;
     }
 }
 
@@ -95,3 +156,4 @@ header .navbar{
 
     
 }
+
