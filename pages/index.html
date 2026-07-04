@@ -8,6 +8,8 @@
   <link href="../assets/bootstrap-5.3.8/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Swiper CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <!-- Adding custom CSS file for styling -->
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
@@ -55,10 +57,10 @@
   <section class="py-5 hero-section">
     <div class="hero-texture">
     <div class="position-absolute top-0 end-0">
-      <img src="../assets/images/textures/hero_right_top_curveline.png" alt="Background Image">
+      <img src="../assets/images/textures/hero_right_top_curveline.png" class="img-texture" alt="Background Image">
     </div>
     <div class="position-absolute left-0">
-      <img src="../assets/images/textures/left_bottom_curveline.png" alt="Background Image">
+      <img src="../assets/images/textures/left_bottom_curveline.png" class="img-texture" alt="Background Image">
     </div>
     </div>
     <div class="container hero-content">
@@ -79,7 +81,63 @@
       </div>
     </div>
   </section>
+
+  <!-- Skills Section -->  
+  <section class="skills py-5">
+    <div class="container">
+      <div class="skills-title text-center mb-4" >
+        <h2 class="fw-bold">My Skills & Toolkits</h2>
+        <p>I build seamless, user-centric experiences by bridging the gap between design and functionality. My workflow is driven by clean code, intuitive interfaces, and a commitment to performance.</p>
+      </div>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><div class="card p-3">
+        <img src="../assets/images/icons/design_tools.png" alt="Design Tools">
+        <p>Tools I use for prototype design includes <strong>Adobe Creative Suite and Figma</strong></p>
+      </div></div>
+      <div class="swiper-slide"><div class="card p-3">
+        <img src="../assets/images/icons/CSS-tools.png" alt="Design Tools">
+        <p>The HTML is visually appealing and responsive after using <strong>CSS3, Bootstrap or Tailwind CSS </strong>.</p>
+      </div></div>
+      <div class="swiper-slide"><div class="card p-3">
+        <img src="../assets/images/icons/programming-tools.png" alt="Design Tools">
+        <p>Along with JavaScript, I am learning <strong>React</strong> to enhance my web development capabilities.</p>
+      </div></div>
+      <div class="swiper-slide"><div class="card p-3">
+        <img src="../assets/images/icons/seo-tools.png" alt="Design Tools">
+        <p>To track and optimize my website's performance, I utilize <strong>Google Analytics and Search Console</strong>.</p>
+      </div></div>
+    </div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+    </div>
+  </section>
+
   <script src="../assets/bootstrap-5.3.8/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,      // How many cards to show
+    spaceBetween: 30,      // Space between cards
+    loop: true,            // Makes it infinite
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      320: { slidesPerView: 1 }, // Show 1 card on mobile
+      768: { slidesPerView: 2 }, // Show 2 on tablet
+      1024: { slidesPerView: 3 } // Show 3 on desktop
+    }
+  });
+
+
+</script>
+
 </body>
 
 </html>

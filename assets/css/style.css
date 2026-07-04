@@ -1,3 +1,4 @@
+/* Header css  */
 header{
     width: 100%;
     background-color: rgba(95, 95, 222, 0.8);
@@ -7,6 +8,12 @@ header{
     background-blend-mode: overlay;
 }
 
+header .navbar{
+   z-index: 1;
+   font-size: 1.2rem;
+}
+
+/* Hero Section css */
 .hero-section{
     width: 100%;
     background-color: rgba(95, 95, 222, 0.8) !important;
@@ -17,6 +24,9 @@ header{
     color: #eeeeee;
 }
 
+.hero-section{
+    overflow: hidden;
+}
 .hero-section .lakpa-bio{
     font-size: 1.2rem !important;
 }
@@ -31,8 +41,57 @@ header{
     height: 400px;
 }
 
+/* Skills Section css */ 
+.skills .skills-title{
+    margin:20px auto;
+    font-size: 1.2rem;
+    width: 70%;
+}
+.skills .skills-title p{
+    font-weight: 600 !important;
+}
+.skills .swiper-slide .card{ 
+    text-align: center;
+    border: solid 1px #cccccc;
+    height: 180px;
+}
+
+.skills .swiper-slide .card:hover{
+    cursor: pointer;
+    background-color: rgba(95, 95, 222, 0.8);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/textures/dotted_texture.png');
+    background-size: cover repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+    color: #eeeeee;
+    transition: background-color 0.5s ease-in-out;
+}
+.skills .swiper-slide .card img{
+    text-align: center;
+    width: 40%;
+    margin:0px auto 1rem auto;
+}
+.skills .swiper-slide .card p{
+    width: 80%;
+    margin: 0px auto;
+}
+
+
+/* Media Queries for responsive design  */
+
 @media (max-width: 768px) {
     .hero-section .hero-texture{
         display: none;
     }
+}
+
+@media (min-width: 768px) {
+     header .navbar .navbar-brand{
+        margin-right: 5rem;
+     }
+    header .navbar .navbar-brand h1{
+        font-size: 6rem !important;
+    }
+
+    
 }
