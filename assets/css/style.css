@@ -1,320 +1,350 @@
-body{
-    background:#f8fbff;
-    font-family:'Poppins',sans-serif;
+/* =========================
+   Base Styles
+========================= */
+body {
+    background: #f8fbff;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Header css  */
-header{
+/* =========================
+   Header
+========================= */
+header {
     width: 100%;
     background-color: rgba(95, 95, 222, 0.8);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/textures/dotted_texture.png');
-    background-size: cover repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../images/textures/dotted_texture.png');
+    background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
 }
 
-header .navbar{
-   z-index: 1;
-   font-size: 1.2rem;
+header .navbar {
+    z-index: 1;
+    font-size: 1.2rem;
 }
 
-/* Hero Section css */
-.hero-section{
+/* =========================
+   Hero Section
+========================= */
+.hero-section {
     width: 100%;
     background-color: rgba(95, 95, 222, 0.8) !important;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/textures/dotted_texture.png');
-    background-size: cover repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('../images/textures/dotted_texture.png');
+    background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
-    color: #eeeeee;
-}
-
-/* Button css for all buttons */
-.btn-custom { 
-    background-color: #ff9f1c; 
-    color: white; 
-    padding: 10px 25px; 
-    border-radius: 50px; 
-    border: none; }
-    .btn-custom:hover { 
-        background-color: #ff7f50; 
-        color: white; 
-        transition: background-color 0.3s ease-in-out;}
-
-.hero-section{
+    color: #eee;
     overflow: hidden;
 }
-.hero-section .lakpa-bio{
+
+.hero-section .lakpa-bio {
     font-size: 1.2rem !important;
 }
-.hero-section .hero-texture{
+
+.hero-section .hero-texture {
     opacity: 0.5;
 }
-.hero-section .hero-content{
+
+.hero-section .hero-content {
     position: relative;
 }
 
-.lakpa-image{
+.lakpa-image {
     height: 400px;
 }
 
-/* Skills Section css */ 
-.skills{
+/* =========================
+   Buttons
+========================= */
+.btn-custom {
+    background-color: #ff9f1c;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 50px;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-custom:hover {
+    background-color: #ff7f50;
+    color: #fff;
+}
+
+/* =========================
+   Skills Section
+========================= */
+.skills {
     padding: 50px 0;
 }
 
-.skills .swiper{
+.skills .swiper {
     padding: 50px 0 !important;
 }
 
-.skills .skills-title{
-    margin:20px auto;
+.skills .skills-title {
+    margin: 20px auto;
 }
-.skills .swiper-slide .skills-card{ 
+
+.skills-card {
     text-align: center;
-    border:none;
+    border: none;
     min-height: 300px;
+    background: #fff;
+    border-radius: 28px;
+    padding: 40px 30px;
+    height: 100%;
+    transition: 0.35s;
+    border: 1px solid #edf0f8;
+    box-shadow: 0 15px 40px rgba(30, 60, 114, 0.08);
 }
-.skills .swiper-slide .skills-card img{
-    text-align: center;
+
+.skills-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 60px rgba(30, 60, 114, 0.15);
+}
+
+.skills-card img {
     width: 60%;
-    margin:0px auto 1rem auto;
-    background-color: #eeeeee;
+    margin: 0 auto 1rem auto;
+    background-color: #eee;
 }
 
-.skills .swiper-slide .skills-card p{
+.skills-card p {
     width: 80%;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
-/* About Section css */
-.about-section  {
-    padding: 80px 0;
-    position: relative;
+/* =========================
+   About Section
+========================= */
+.about-section {
     padding: 80px 40px;
+    position: relative;
+    overflow: hidden;
 
-    /* Two background images */
     background-image:
         url("../images/textures/about-section-bg-texture-right.png"),
         url("../images/textures/about-section-bg-texture-left.png");
 
-    /* Position each image */
-    background-position:
-        top right,
-        bottom left;
-
-    /* Prevent repeating */
-    background-repeat:
-        no-repeat,
-        no-repeat;
-
-    /* Individual sizes */
-    background-size:
-        350px,
-        320px;
-
-    overflow: hidden;
+    background-position: top right, bottom left;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 350px, 320px;
 }
 
-/* Ensure all content stays above */
 .about-section > * {
     position: relative;
     z-index: 1;
 }
 
-        .img-wrapper { position: relative; display: inline-block; }
-        .info-card { background: #fff; padding: 20px; border-radius: 10px; margin-bottom: 15px; border-left: 5px solid transparent; }
-        .card-orange { background-color: #fff2e6; }
-        .card-purple { background-color: #f3eef8; }
-        
-
-    /* Working Process Section css */
-    
-.process-section{
-    position:relative;
-    padding:100px 0;
-    overflow:hidden;
+.img-wrapper {
+    position: relative;
+    display: inline-block;
 }
 
-/* Background decoration */
-
-.process-section::before{
-    content:"";
-    position:absolute;
-    width:450px;
-    height:450px;
-    background:linear-gradient(135deg,#8b5cf6,#4f46e5);
-    opacity:.08;
-    border-radius:50%;
-    top:-180px;
-    left:-120px;
+.info-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border-left: 5px solid transparent;
 }
 
-.process-section::after{
-    content:"";
-    position:absolute;
-    width:500px;
-    height:500px;
-    background:linear-gradient(135deg,#14b8a6,#38bdf8);
-    opacity:.06;
-    border-radius:50%;
-    bottom:-250px;
-    right:-180px;
+.card-orange {
+    background-color: #fff2e6;
 }
 
-/* Heading */
-
-.subtitle{
-    display:inline-block;
-    padding:8px 22px;
-    border:1px solid #dadcff;
-    border-radius:50px;
-    color:#6d5efc;
-    background:#fff;
-    font-size:.85rem;
-    font-weight:600;
-    letter-spacing:1px;
+.card-purple {
+    background-color: #f3eef8;
 }
 
-.title{
-    font-size:3rem;
-    font-weight:800;
+/* =========================
+   Process Section
+========================= */
+.process-section {
+    position: relative;
+    padding: 100px 0;
+    overflow: hidden;
 }
 
-.title span{
-    background:linear-gradient(90deg,#6d5efc,#3ea8ff);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+.process-section::before,
+.process-section::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
 }
 
-.description{
-    color:#7b8098;
-    max-width:650px;
-    margin:auto;
+.process-section::before {
+    width: 450px;
+    height: 450px;
+    background: linear-gradient(135deg, #8b5cf6, #4f46e5);
+    opacity: 0.08;
+    top: -180px;
+    left: -120px;
 }
 
-/* Card */
-
-.process-card, .skills-card{
-    background:#fff;
-    border-radius:28px;
-    padding:40px 30px;
-    height:100%;
-    transition:.35s;
-    position:relative;
-    overflow:hidden;
-    border:1px solid #edf0f8;
-    box-shadow:0 15px 40px rgba(30,60,114,.08);
+.process-section::after {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(135deg, #14b8a6, #38bdf8);
+    opacity: 0.06;
+    bottom: -250px;
+    right: -180px;
 }
 
-.process-card:hover, .skills-card:hover{
-    transform:translateY(-12px);
-    box-shadow:0 25px 60px rgba(30,60,114,.15);
+/* =========================
+   Typography
+========================= */
+.subtitle {
+    display: inline-block;
+    padding: 8px 22px;
+    border: 1px solid #dadcff;
+    border-radius: 50px;
+    color: #6d5efc;
+    background: #fff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 
-.step-number{
-    width:60px;
-    height:60px;
-    border-radius:18px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-weight:700;
-    color:#6d5efc;
-    background:#f4efff;
-    margin-bottom:25px;
+.title {
+    font-size: 3rem;
+    font-weight: 800;
 }
 
-.icon-circle{
-    width:120px;
-    height:120px;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin:auto;
-    margin-bottom:25px;
-    font-size:55px;
-    color:#fff;
+.title span {
+    background: linear-gradient(90deg, #6d5efc, #3ea8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.bg-purple{
-    background:linear-gradient(135deg,#7c3aed,#6366f1);
+.description {
+    color: #7b8098;
+    max-width: 650px;
+    margin: auto;
 }
 
-.bg-blue{
-    background:linear-gradient(135deg,#2563eb,#38bdf8);
+/* =========================
+   Cards (Shared)
+========================= */
+.process-card {
+    background: #fff;
+    border-radius: 28px;
+    padding: 40px 30px;
+    height: 100%;
+    transition: 0.35s;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #edf0f8;
+    box-shadow: 0 15px 40px rgba(30, 60, 114, 0.08);
 }
 
-.bg-green{
-    background:linear-gradient(135deg,#22c55e,#14b8a6);
+.process-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 60px rgba(30, 60, 114, 0.15);
 }
 
-.process-card h3{
-    font-weight:700;
+.process-card h3 {
+    font-weight: 700;
 }
 
-.line{
-    width:70px;
-    height:4px;
-    margin:18px auto;
-    border-radius:50px;
+/* =========================
+   Icons & Steps
+========================= */
+.step-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #6d5efc;
+    background: #f4efff;
+    margin-bottom: 25px;
 }
 
-.line-purple{background:#7c3aed;}
-.line-blue{background:#3b82f6;}
-.line-green{background:#22c55e;}
-
-.tags{
-    display:flex;
-    justify-content:center;
-    gap:10px;
-    flex-wrap:wrap;
-    margin-top:30px;
+.icon-circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+    font-size: 55px;
+    color: #fff;
 }
 
-.tags span{
-    background:#f3f6fd;
-    padding:8px 16px;
-    border-radius:30px;
-    font-size:.85rem;
+.bg-purple { background: linear-gradient(135deg, #7c3aed, #6366f1); }
+.bg-blue   { background: linear-gradient(135deg, #2563eb, #38bdf8); }
+.bg-green  { background: linear-gradient(135deg, #22c55e, #14b8a6); }
+
+/* =========================
+   Lines & Tags
+========================= */
+.line {
+    width: 70px;
+    height: 4px;
+    margin: 18px auto;
+    border-radius: 50px;
 }
 
-@media(max-width:768px){
+.line-purple { background: #7c3aed; }
+.line-blue   { background: #3b82f6; }
+.line-green  { background: #22c55e; }
 
-.title{
-    font-size:2.2rem;
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 30px;
 }
 
-.process-card{
-    margin-bottom:25px;
+.tags span {
+    background: #f3f6fd;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.85rem;
 }
 
+/* =========================
+   Utilities
+========================= */
+.lakpa-image {
+    height: 400px;
 }
 
-/* Media Queries for responsive design  */
-
+/* =========================
+   Responsive
+========================= */
 @media (max-width: 768px) {
-    .hero-section .hero-texture{
+
+    .title {
+        font-size: 2.2rem;
+    }
+
+    .hero-section .hero-texture {
         display: none;
     }
 
     .about-section {
         background-size: 180px, 180px;
-        background-position:
-            top right,
-            bottom left;
+    }
+
+    .process-card {
+        margin-bottom: 25px;
     }
 }
 
 @media (min-width: 768px) {
-     header .navbar .navbar-brand{
+    header .navbar .navbar-brand {
         margin-right: 5rem;
-     }
-    header .navbar .navbar-brand h1{
-        font-size: 6rem !important;
     }
 
-    
+    header .navbar .navbar-brand h1 {
+        font-size: 6rem !important;
+    }
 }
-
