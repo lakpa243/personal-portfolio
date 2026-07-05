@@ -65,23 +65,18 @@ header .navbar{
 .skills .swiper-slide .card{ 
     text-align: center;
     border: solid 1px #cccccc;
-    height: 180px;
+    height: 250px;
 }
 
 .skills .swiper-slide .card:hover{
     cursor: pointer;
-    background-color: rgba(95, 95, 222, 0.8);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/textures/dotted_texture.png');
-    background-size: cover repeat;
-    background-position: center;
-    background-blend-mode: overlay;
-    color: #eeeeee;
     transition: background-color 0.5s ease-in-out;
 }
 .skills .swiper-slide .card img{
     text-align: center;
     width: 40%;
     margin:0px auto 1rem auto;
+    background-color: #eeeeee;
 }
 .skills .swiper-slide .card p{
     width: 80%;
