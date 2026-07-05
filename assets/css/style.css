@@ -1,3 +1,8 @@
+body{
+    background:#f8fbff;
+    font-family:'Poppins',sans-serif;
+}
+
 /* Header css  */
 header{
     width: 100%;
@@ -54,38 +59,37 @@ header .navbar{
 }
 
 /* Skills Section css */ 
-.skills .skills-title{
-    margin:20px auto;
-    font-size: 1.2rem;
-    width: 70%;
-}
-.skills .skills-title p{
-    font-weight: 600 !important;
-}
-.skills .swiper-slide .card{ 
-    text-align: center;
-    border: solid 1px #cccccc;
-    height: 250px;
+.skills{
+    padding: 50px 0;
 }
 
-.skills .swiper-slide .card:hover{
-    cursor: pointer;
-    transition: background-color 0.5s ease-in-out;
+.skills .swiper{
+    padding: 50px 0 !important;
 }
-.skills .swiper-slide .card img{
+
+.skills .skills-title{
+    margin:20px auto;
+}
+.skills .swiper-slide .skills-card{ 
     text-align: center;
-    width: 40%;
+    border:none;
+    min-height: 300px;
+}
+.skills .swiper-slide .skills-card img{
+    text-align: center;
+    width: 60%;
     margin:0px auto 1rem auto;
     background-color: #eeeeee;
 }
-.skills .swiper-slide .card p{
+
+.skills .swiper-slide .skills-card p{
     width: 80%;
     margin: 0px auto;
 }
 
 /* About Section css */
 .about-section  {
-    padding: 80px 0; background-color: #fcfcfc;
+    padding: 80px 0;
     position: relative;
     padding: 80px 40px;
 
@@ -124,7 +128,169 @@ header .navbar{
         .card-purple { background-color: #f3eef8; }
         
 
+    /* Working Process Section css */
     
+.process-section{
+    position:relative;
+    padding:100px 0;
+    overflow:hidden;
+}
+
+/* Background decoration */
+
+.process-section::before{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+    background:linear-gradient(135deg,#8b5cf6,#4f46e5);
+    opacity:.08;
+    border-radius:50%;
+    top:-180px;
+    left:-120px;
+}
+
+.process-section::after{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    background:linear-gradient(135deg,#14b8a6,#38bdf8);
+    opacity:.06;
+    border-radius:50%;
+    bottom:-250px;
+    right:-180px;
+}
+
+/* Heading */
+
+.subtitle{
+    display:inline-block;
+    padding:8px 22px;
+    border:1px solid #dadcff;
+    border-radius:50px;
+    color:#6d5efc;
+    background:#fff;
+    font-size:.85rem;
+    font-weight:600;
+    letter-spacing:1px;
+}
+
+.title{
+    font-size:3rem;
+    font-weight:800;
+}
+
+.title span{
+    background:linear-gradient(90deg,#6d5efc,#3ea8ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.description{
+    color:#7b8098;
+    max-width:650px;
+    margin:auto;
+}
+
+/* Card */
+
+.process-card, .skills-card{
+    background:#fff;
+    border-radius:28px;
+    padding:40px 30px;
+    height:100%;
+    transition:.35s;
+    position:relative;
+    overflow:hidden;
+    border:1px solid #edf0f8;
+    box-shadow:0 15px 40px rgba(30,60,114,.08);
+}
+
+.process-card:hover, .skills-card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 25px 60px rgba(30,60,114,.15);
+}
+
+.step-number{
+    width:60px;
+    height:60px;
+    border-radius:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:700;
+    color:#6d5efc;
+    background:#f4efff;
+    margin-bottom:25px;
+}
+
+.icon-circle{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    margin-bottom:25px;
+    font-size:55px;
+    color:#fff;
+}
+
+.bg-purple{
+    background:linear-gradient(135deg,#7c3aed,#6366f1);
+}
+
+.bg-blue{
+    background:linear-gradient(135deg,#2563eb,#38bdf8);
+}
+
+.bg-green{
+    background:linear-gradient(135deg,#22c55e,#14b8a6);
+}
+
+.process-card h3{
+    font-weight:700;
+}
+
+.line{
+    width:70px;
+    height:4px;
+    margin:18px auto;
+    border-radius:50px;
+}
+
+.line-purple{background:#7c3aed;}
+.line-blue{background:#3b82f6;}
+.line-green{background:#22c55e;}
+
+.tags{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.tags span{
+    background:#f3f6fd;
+    padding:8px 16px;
+    border-radius:30px;
+    font-size:.85rem;
+}
+
+@media(max-width:768px){
+
+.title{
+    font-size:2.2rem;
+}
+
+.process-card{
+    margin-bottom:25px;
+}
+
+}
 
 /* Media Queries for responsive design  */
 
