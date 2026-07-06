@@ -298,29 +298,147 @@
 
   </section>
 
+  <!-- Portfolio Section -->
+
+  <section class="portfolio-section py-5" id="portfolio">
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="row align-items-end mb-5">
+
+      <div class="col-md-7" data-aos="fade-up">
+        <h6 class="text-primary fw-semibold">My Work</h6>
+        <h2 class="fw-bold display-6">Featured Portfolio</h2>
+        <p class="text-muted">
+          A collection of projects where I design and build modern web experiences.
+        </p>
+      </div>
+
+      <div class="col-md-5 text-md-end" data-aos="fade-up" data-aos-delay="100">
+        <a href="#portfolio" class="btn btn-outline-primary rounded-pill px-4">
+          View All Projects
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Featured Project -->
+    <div class="row mb-4">
+  <div class="col-12">
+    <div class="featured-project shadow-lg rounded-4 overflow-hidden">
+
+      <div class="row g-0">
+
+        <div class="col-md-6">
+          <img id="featured-img"
+               src="../assets/images/portfolio/quicktrackinc.png"
+               class="img-fluid h-100 object-fit-cover" alt="Featured Project Image">
+        </div>
+
+        <div class="col-md-6 p-4 d-flex flex-column justify-content-center">
+
+          <span class="badge bg-primary mb-2 w-fit" id="featured-tag">
+            Featured Project
+          </span>
+
+          <h3 class="fw-bold" id="featured-title">
+            Convenience Store 
+          </h3>
+
+          <p class="text-muted" id="featured-desc">
+            Quick Track Inc, a multi-store convenience retailer.
+          </p>
+
+          <div class="d-flex gap-2 flex-wrap mb-3" id="featured-tech">
+            <span class="badge bg-light text-dark">Wordpress</span>
+            <span class="badge bg-light text-dark">JavaScript</span>
+            <span class="badge bg-light text-dark">Google Analytics</span>
+            <span class="badge bg-light text-dark">Google My Business</span>
+          </div>
+
+          <a href="https://quicktrackinc.com/" target="_blank" rel="nofollow sponsored" class="btn btn-primary rounded-pill px-4" id="featured-link">
+            View Project
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <!-- Filter cards -->
+<div class="row g-4">
+
+  <div class="col-md-4">
+    <div class="project-card shadow-sm rounded-4 overflow-hidden cursor-pointer"
+         onclick="setFeatured(this)"
+         data-title="QuickTrack Inc"
+         data-desc="Website for a Convenience Store company."
+         data-img="../assets/images/portfolio/quicktrackinc.png"
+         data-link="https://quicktrackinc.com/"
+         data-tech="HTML, CSS, Bootstrap">
+
+      <img src="../assets/images/portfolio/quicktrackinc.png" class="img-fluid" alt="QuickTrack Inc">
+      <div class="p-3">
+        <h5 class="fw-bold">QuickTrack Inc</h5>
+        <p class="text-muted small">Multi store convenience shop website</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="project-card shadow-sm rounded-4 overflow-hidden cursor-pointer"
+         onclick="setFeatured(this)"
+         data-title="Enchantment Beauty Salon"
+         data-desc="5 pages static website for a beauty salon."
+         data-img="../assets/images/portfolio/enchantmentbeautysalon.png"
+         data-link="https://www.enchantmentbeautysalon.com/"
+         data-tech="Bootstrap, JS, JQuery">
+
+      <img src="../assets/images/portfolio/enchantmentbeautysalon.png" class="img-fluid" alt="Enchantment Beauty Salon">
+      <div class="p-3">
+        <h5 class="fw-bold">Enchantment Beauty Salon</h5>
+        <p class="text-muted small">5 pages static website</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="project-card shadow-sm rounded-4 overflow-hidden cursor-pointer"
+         onclick="setFeatured(this)"
+         data-title="Frisco Limousine"
+         data-desc="A website for a limousine service company with booking and tracking features."
+         data-img="../assets/images/portfolio/friscolimousine.png"
+         data-link="https://friscolimousine.com/"
+         data-tech="Bootstrap, JS, Jquery, Google Analytics">
+
+      <img src="../assets/images/portfolio/friscolimousine.png" class="img-fluid" alt="Frisco Limousine">
+      <div class="p-3">
+        <h5 class="fw-bold">Frisco Limousine</h5>
+        <p class="text-muted small">Limousine service website</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+
+</section>
+
+
   <script src="../assets/bootstrap-5.3.8/js/bootstrap.bundle.min.js"></script>
 
   <!-- Swiper JS for skill section-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,      // How many cards to show
-      spaceBetween: 30,      // Space between cards
-      loop: true,            // Makes it infinite
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        320: { slidesPerView: 1 }, // Show 1 card on mobile
-        768: { slidesPerView: 2 }, // Show 2 on tablet
-        1024: { slidesPerView: 3 } // Show 3 on desktop
-      }
-    });
-
-
-  </script>
-
+  <script src="../assets/js/skillsSlider.js"></script>
+<!-- Portfolio Section JS -->
+  <script src="../assets/js/portfolio.js"></script>
 </body>
 
 </html>

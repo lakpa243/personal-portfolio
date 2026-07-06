@@ -317,6 +317,44 @@ header .navbar {
     height: 400px;
 }
 
+
+/* =========================
+   Portfolio Section
+========================= */
+
+.portfolio-section {
+    background: #f8fbff;
+}
+
+/* Featured Project */
+.featured-project {
+    background: #fff;
+}
+
+/* Project Cards */
+.project-card {
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.project-card img {
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Buttons */
+.btn {
+    transition: all 0.3s ease;
+}
+
 /* =========================
    Responsive
 ========================= */
