@@ -5,6 +5,7 @@ body {
     background: #f8fbff;
     font-family: 'Poppins', sans-serif;
 }
+
 .sub-heading {
     font-size: 2.5rem;
     font-weight: bold;
@@ -30,6 +31,13 @@ header .navbar {
     z-index: 1;
     font-size: 1.2rem;
 }
+
+header .navbar .navbar-brand .logo {
+    max-height: 100px;
+    width: auto;
+    margin-right: 30px;
+}
+
 
 /* =========================
    Hero Section
@@ -74,7 +82,8 @@ header .navbar {
     border: none;
     transition: background-color 0.3s ease-in-out;
 }
-.btn-custom a{
+
+.btn-custom a {
     text-decoration: none;
     color: #fff;
 }
@@ -145,7 +154,7 @@ header .navbar {
     background-size: 350px, 320px;
 }
 
-.about-section > * {
+.about-section>* {
     position: relative;
     z-index: 1;
 }
@@ -289,9 +298,17 @@ header .navbar {
     color: #fff;
 }
 
-.bg-purple { background: linear-gradient(135deg, #7c3aed, #6366f1); }
-.bg-blue   { background: linear-gradient(135deg, #2563eb, #38bdf8); }
-.bg-green  { background: linear-gradient(135deg, #22c55e, #14b8a6); }
+.bg-purple {
+    background: linear-gradient(135deg, #7c3aed, #6366f1);
+}
+
+.bg-blue {
+    background: linear-gradient(135deg, #2563eb, #38bdf8);
+}
+
+.bg-green {
+    background: linear-gradient(135deg, #22c55e, #14b8a6);
+}
 
 /* =========================
    Lines & Tags
@@ -303,9 +320,17 @@ header .navbar {
     border-radius: 50px;
 }
 
-.line-purple { background: #7c3aed; }
-.line-blue   { background: #3b82f6; }
-.line-green  { background: #22c55e; }
+.line-purple {
+    background: #7c3aed;
+}
+
+.line-blue {
+    background: #3b82f6;
+}
+
+.line-green {
+    background: #22c55e;
+}
 
 .tags {
     display: flex;
@@ -352,7 +377,7 @@ header .navbar {
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
 }
 
 .project-card img {
@@ -374,7 +399,7 @@ header .navbar {
 ========================= */
 
 
-.portfolio-box{
+.hire-me {
     background-color: rgba(95, 95, 222, 0.8);
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
         url('../images/textures/dotted_texture.png');
@@ -383,63 +408,137 @@ header .navbar {
     background-position: center;
     background-blend-mode: overlay;
     max-height: 500px;
-    margin-top: 50px;
+    margin-top: 100px;
     position: relative;
 }
 
-.portfolio-box::before{
-    content:"";
-    position:absolute;
-    inset:0;
+.hire-me::before {
+    content: "";
+    position: absolute;
+    inset: 0;
     background:
-    url("../images/textures/hero_right_top_curveline.png") top right no-repeat,
-    url("../images/textures/left_bottom_curveline.png") bottom left no-repeat;
+        url("../images/textures/hero_right_top_curveline.png") top right no-repeat,
+        url("../images/textures/left_bottom_curveline.png") bottom left no-repeat;
     background-size: auto;
-    opacity:0.5;
+    opacity: 0.5;
 }
 
-.portfolio-box img{
-    max-height:500px;
-    margin-top: -100px;
+.hire-me img {
+    max-height: 500px;
     position: relative;
+    margin-top: -100px;
 }
 
-.portfolio-box .small-device{
-    display:none;
+
+.hire-me .small-device {
+    display: none;
+}
+
+/* =========================
+   Footer Section
+========================= */
+
+.footer {
+    background: #111827;
+    color: #bfc4d3;
+    padding: 50px 20px;
+}
+
+.footer .footer-about .footer-logo {
+    max-width: 300px;
+}
+
+.footer .footer-subtitle {
+    color: #eee;
+}
+
+.footer p {
+    line-height: 1.8;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #bfc4d3;
+    transition: .3s;
+}
+
+.footer-links a:hover {
+    color: #4f8cff;
+    padding-left: 5px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #1f2937;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.social-icons a:hover {
+    background: #4f8cff;
+    transform: translateY(-4px);
+}
+
+hr {
+    opacity: .15;
 }
 
 
 /* =========================
    Responsive
 ========================= */
-@media(max-width:991px){
+@media(max-width:991px) {
 
-    .portfolio-box{
+    .hire-me {
 
-        padding:50px 35px;
-        text-align:center;
-        margin-top: 0px;
+        padding: 50px 35px;
+        text-align: center;
         max-height: 550px;
+        overflow: hidden;
     }
 
-    .portfolio-box img{
-        margin-top:40px;
-        max-height:380px;
+    .hire-me img {
+        max-height: 380px;
+        margin-top: 20px;
     }
 
     /* display in small devices */
-    .portfolio-box .small-device{
-    display:block;
-    align-items:center;
-    } 
-    /* hide in small devices */
-    .portfolio-box .large-device{
-    display:none;
+    .hire-me .small-device {
+        display: block;
+        align-items: center;
     }
+
+    /* hide in small devices */
+    .hire-me .large-device {
+        display: none;
+    }
+
 
 }
 
 @media (max-width: 768px) {
+
+    header .navbar .navbar-brand .logo {
+        max-height: 100px;
+        width: 250px;
+        margin: 0px;
+        padding: 0px;
+    }
 
     .title {
         font-size: 2.2rem;
@@ -456,16 +555,12 @@ header .navbar {
     .process-card {
         margin-bottom: 25px;
     }
-}
 
-@media (min-width: 768px) {
-    header .navbar .navbar-brand {
-        margin-right: 5rem;
+    .hire-me img {
+        margin-top: 10px;
+        max-height: 300px;
+        clear: both;
     }
 
-    header .navbar .navbar-brand h1 {
-        font-size: 6rem !important;
-    }
-    
-}
 
+}

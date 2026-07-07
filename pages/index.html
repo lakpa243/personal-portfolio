@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Lakpa Sherpa | Home page</title>
   <link href="../assets/bootstrap-5.3.8/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
@@ -12,6 +12,12 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <!-- Adding custom CSS file for styling -->
   <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!-- FavIcons -->
+   <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
+  <link rel="manifest" href="../assets/images/favicons/site.webmanifest">
 </head>
 
 <body>
@@ -22,7 +28,7 @@
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <h1 class="mr-3">LS</h1>
+            <img src="../assets/images/lakpa-logo.png" alt="Lakpa Sherpa Logo" class="logo">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -169,7 +175,7 @@
     </div>
   </section>
 
-  <!-- WOrking Process Section -->
+  <!-- Working Process Section -->
   <section class="process-section">
 
     <div class="container">
@@ -302,188 +308,246 @@
 
   <section class="portfolio-section py-5" id="portfolio">
 
-  <div class="container">
+    <div class="container">
 
-    <!-- Header -->
-    <div class="row align-items-end mb-5">
+      <!-- Header -->
+      <div class="row align-items-end mb-5">
 
-      <div class="col-md-7 portfolio-featured" data-aos="fade-up">
-        <h6 class="text-primary fw-semibold">My Work</h6>
-        <h2 class="sub-heading">Featured Portfolio</h2>
-        <p class="text-muted">
-          A collection of projects where I design and build modern web experiences.
-        </p>
-      </div>
-
-      <div class="col-md-5 text-md-end" data-aos="fade-up" data-aos-delay="100">
-        <a href="#portfolio" class="btn btn-outline-primary rounded-pill px-4">
-          View All Projects
-        </a>
-      </div>
-
-    </div>
-
-    <!-- Featured Project -->
-    <div class="row mb-4">
-  <div class="col-12">
-    <div class="featured-project shadow-lg rounded-4 overflow-hidden">
-
-      <div class="row g-0">
-
-        <div class="col-md-6">
-          <img id="featured-img"
-               src="../assets/images/portfolio/quicktrackinc.png"
-               class="img-fluid h-100 object-fit-cover" alt="Featured Project Image">
-        </div>
-
-        <div class="col-md-6 p-4 d-flex flex-column justify-content-center">
-
-          <span class="badge bg-primary mb-2 w-fit" id="featured-tag">
-            Featured Project
-          </span>
-
-          <h3 class="fw-bold" id="featured-title">
-            Convenience Store 
-          </h3>
-
-          <p class="text-muted" id="featured-desc">
-            Quick Track Inc, a multi-store convenience retailer.
+        <div class="col-md-7 portfolio-featured" data-aos="fade-up">
+          <h6 class="text-primary fw-semibold">My Work</h6>
+          <h2 class="sub-heading">Featured Portfolio</h2>
+          <p class="text-muted">
+            A collection of projects where I design and build modern web experiences.
           </p>
+        </div>
 
-          <div class="d-flex gap-2 flex-wrap mb-3" id="featured-tech">
-            <span class="badge bg-light text-dark">Wordpress</span>
-            <span class="badge bg-light text-dark">JavaScript</span>
-            <span class="badge bg-light text-dark">Google Analytics</span>
-            <span class="badge bg-light text-dark">Google My Business</span>
-          </div>
-
-          <a href="https://quicktrackinc.com/" target="_blank" rel="nofollow sponsored" class="btn btn-primary rounded-pill px-4" id="featured-link">
-            View Project
+        <div class="col-md-5 text-md-end" data-aos="fade-up" data-aos-delay="100">
+          <a href="#portfolio" class="btn btn-outline-primary rounded-pill px-4">
+            View All Projects
           </a>
-
         </div>
 
       </div>
 
-    </div>
-  </div>
-</div>
+      <!-- Featured Project -->
+      <div class="row mb-4">
+        <div class="col-12">
+          <div class="featured-project shadow-lg rounded-4 overflow-hidden">
 
-    <!-- Featured Filter cards -->
-<div class="row g-4">
+            <div class="row g-0">
 
-  <div class="col-md-4">
-    <div class="project-card shadow-sm rounded-4 overflow-hidden cursor-pointer"
-         onclick="setFeatured(this)"
-         data-title="QuickTrack Inc"
-         data-desc="Website for a Convenience Store company."
-         data-img="../assets/images/portfolio/quicktrackinc.png"
-         data-link="https://quicktrackinc.com/"
-         data-tech="HTML, CSS, Bootstrap">
+              <div class="col-md-6">
+                <img id="featured-img" src="../assets/images/portfolio/quicktrackinc.png"
+                  class="img-fluid h-100 object-fit-cover" alt="Featured Project Image">
+              </div>
 
-      <img src="../assets/images/portfolio/quicktrackinc.png" class="img-fluid" alt="QuickTrack Inc">
-      <div class="p-3">
-        <h5 class="fw-bold">QuickTrack Inc</h5>
-        <p class="text-muted small">Multi store convenience shop website</p>
-      </div>
+              <div class="col-md-6 p-4 d-flex flex-column justify-content-center">
 
-    </div>
-  </div>
+                <span class="badge bg-primary mb-2 w-fit" id="featured-tag">
+                  Featured Project
+                </span>
 
-  <div class="col-md-4">
-    <div class="project-card shadow-sm rounded-4 overflow-hidden cursor-pointer"
-         onclick="setFeatured(this)"
-         data-title="Enchantment Beauty Salon"
-         data-desc="5 pages static website for a beauty salon."
-         data-img="../assets/images/portfolio/enchantmentbeautysalon.png"
-         data-link="https://www.enchantmentbeautysalon.com/"
-         data-tech="Bootstrap, JS, JQuery">
+                <h3 class="fw-bold" id="featured-title">
+                  Convenience Store
+                </h3>
 
-      <img src="../assets/images/portfolio/enchantmentbeautysalon.png" class="img-fluid" alt="Enchantment Beauty Salon">
-      <div class="p-3">
-        <h5 class="fw-bold">Enchantment Beauty Salon</h5>
-        <p class="text-muted small">5 pages static website</p>
-      </div>
+                <p class="text-muted" id="featured-desc">
+                  Quick Track Inc, a multi-store convenience retailer.
+                </p>
 
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="project-card shadow-sm rounded-4 overflow-hidden cursor-pointer"
-         onclick="setFeatured(this)"
-         data-title="Frisco Limousine"
-         data-desc="A website for a limousine service company with booking and tracking features."
-         data-img="../assets/images/portfolio/friscolimousine.png"
-         data-link="https://friscolimousine.com/"
-         data-tech="Bootstrap, JS, Jquery, Google Analytics">
-
-      <img src="../assets/images/portfolio/friscolimousine.png" class="img-fluid" alt="Frisco Limousine">
-      <div class="p-3">
-        <h5 class="fw-bold">Frisco Limousine</h5>
-        <p class="text-muted small">Limousine service website</p>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-  </div>
-
-</section>
-
-
-<!-- Hire me Section -->
- <section class="py-5">
-    <div class="portfolio-box">
-
-        <div class="container">
-
-            <div class="row align-items-center">
-
-                <!-- Left Content -->
-                <div class="col-lg-6">
-
-                    <h2 class="sub-heading text-white">
-                        Want to Hire me,
-                        Let's Talk
-                    </h2>
-
-                    <p class="text-light mb-4">
-                      Looking for a reliable web developer to bring your vision to life.
-                      Get in touch today, and let's build something amazing together.
-                    </p>
-
-                    <button class="btn btn-custom">
-                       <a href="#">Contact</a> 
-                    </button>
-
+                <div class="d-flex gap-2 flex-wrap mb-3" id="featured-tech">
+                  <span class="badge bg-light text-dark">Wordpress</span>
+                  <span class="badge bg-light text-dark">JavaScript</span>
+                  <span class="badge bg-light text-dark">Google Analytics</span>
+                  <span class="badge bg-light text-dark">Google My Business</span>
                 </div>
 
-                <!-- Right Image large device -->
-                <div class="col-lg-6 text-center large-device">
-                    <img src="../assets/images/hire-lakpa.png"
-                        class="img-fluid"
-                        alt="Hire Lakpa">                        
-                </div>
-                <div class="col-lg-6 text-center small-device">                        
-                    <img src="../assets/images/smalldevice-hire-lakpa.png"
-                        class="img-fluid "
-                        alt="Hire Lakpa">                        
-                </div>
+                <a href="https://quicktrackinc.com/" target="_blank" rel="nofollow sponsored"
+                  class="btn btn-primary rounded-pill px-4" id="featured-link">
+                  View Project
+                </a>
+
+              </div>
 
             </div>
 
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Filter cards -->
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="project-card shadow-sm rounded-4 overflow-hidden cursor-pointer" onclick="setFeatured(this)"
+            data-title="QuickTrack Inc" data-desc="Website for a Convenience Store company."
+            data-img="../assets/images/portfolio/quicktrackinc.png" data-link="https://quicktrackinc.com/"
+            data-tech="HTML, CSS, Bootstrap">
+
+            <img src="../assets/images/portfolio/quicktrackinc.png" class="img-fluid" alt="QuickTrack Inc">
+            <div class="p-3">
+              <h5 class="fw-bold">QuickTrack Inc</h5>
+              <p class="text-muted small">Multi store convenience shop website</p>
+            </div>
+
+          </div>
         </div>
 
+        <div class="col-md-4">
+          <div class="project-card shadow-sm rounded-4 overflow-hidden cursor-pointer" onclick="setFeatured(this)"
+            data-title="Enchantment Beauty Salon" data-desc="5 pages static website for a beauty salon."
+            data-img="../assets/images/portfolio/enchantmentbeautysalon.png"
+            data-link="https://www.enchantmentbeautysalon.com/" data-tech="Bootstrap, JS, JQuery">
+
+            <img src="../assets/images/portfolio/enchantmentbeautysalon.png" class="img-fluid"
+              alt="Enchantment Beauty Salon">
+            <div class="p-3">
+              <h5 class="fw-bold">Enchantment Beauty Salon</h5>
+              <p class="text-muted small">5 pages static website</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="project-card shadow-sm rounded-4 overflow-hidden cursor-pointer" onclick="setFeatured(this)"
+            data-title="Frisco Limousine"
+            data-desc="A website for a limousine service company with booking and tracking features."
+            data-img="../assets/images/portfolio/friscolimousine.png" data-link="https://friscolimousine.com/"
+            data-tech="Bootstrap, JS, Jquery, Google Analytics">
+
+            <img src="../assets/images/portfolio/friscolimousine.png" class="img-fluid" alt="Frisco Limousine">
+            <div class="p-3">
+              <h5 class="fw-bold">Frisco Limousine</h5>
+              <p class="text-muted small">Limousine service website</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
     </div>
-</section>
+
+  </section>
+
+
+  <!-- Hire me Section -->
+  <section class="hire-me"">
+        <div class=" container">
+
+    <div class="row align-items-center">
+
+      <!-- Left Content -->
+      <div class="col-lg-6">
+
+        <h2 class="sub-heading text-white">
+          Want to Hire me,
+          Let's Talk
+        </h2>
+
+        <p class="text-light mb-4">
+          Looking for a reliable web developer to bring your vision to life.
+          Get in touch today, and let's build something amazing together.
+        </p>
+
+        <button class="btn btn-custom">
+          <a href="#">Contact</a>
+        </button>
+
+      </div>
+
+      <!-- Right Image large device -->
+      <div class="col-lg-6 text-center large-device">
+        <img src="../assets/images/hire-lakpa.png" class="img-fluid" alt="Hire Lakpa">
+      </div>
+      <div class="col-lg-6 text-center small-device">
+        <img src="../assets/images/smalldevice-hire-lakpa.png" class="img-fluid " alt="Hire Lakpa">
+      </div>
+
+    </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="row">
+
+        <!-- About -->
+        <div class="col-lg-4 footer-about">
+          <img src="../assets/images/lakpa-logo.png" class="footer-logo" title="Lakpa's Logo" alt="Lakpa's Logo" />
+          <blockquote class="blockquote">
+            <p>"I design and develop modern, responsive websites with a focus
+              on performance, user experience, and clean code."</p>
+          </blockquote>
+
+          <div class="social-icons mt-4">
+
+            <a href="#"><i class="bi bi-facebook"></i></a>
+
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+
+            <a href="#"><i class="bi bi-github"></i></a>
+
+            <a href="#"><i class="bi bi-instagram"></i></a>
+
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-2 col-md-6 mt-3">
+          <h5 class="footer-subtitle mb-3">Quick Links</h5>
+
+          <ul class="list-unstyled footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Services -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-subtitle mb-3">Services</h5>
+
+          <ul class="list-unstyled footer-links">
+            <li><i class="bi bi-check2-circle"></i> Web Development</li>
+            <li><i class="bi bi-check2-circle"></i> UI/UX Design</li>
+            <li><i class="bi bi-check2-circle"></i> WordPress</li>
+            <li><i class="bi bi-check2-circle"></i> Landing Pages</li>
+            <li><i class="bi bi-check2-circle"></i> Website Maintenance</li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-3">
+          <h5 class="footer-subtitle mb-3">Contact</h5>
+
+          <p><i class="bi bi-envelope-at"></i> info@lakpa.com.np</p>
+          <p><i class="bi bi-geo-alt"></i> GU15 3HQ, Camberley, Surrey, UK</p>
+        </div>
+
+      </div>
+
+      <hr class="my-4 border-secondary">
+
+      <div class="text-center">
+        <p class="mb-0">
+          © 2026 Lakpa Sherpa. All Rights Reserved.
+        </p>
+      </div>
+
+    </div>
+  </footer>
 
   <script src="../assets/bootstrap-5.3.8/js/bootstrap.bundle.min.js"></script>
 
   <!-- Swiper JS for skill section-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="../assets/js/skillsSlider.js"></script>
-<!-- Portfolio Section JS -->
+  <!-- Portfolio Section JS -->
   <script src="../assets/js/portfolio.js"></script>
 </body>
 
