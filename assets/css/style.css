@@ -5,6 +5,12 @@ body {
     background: #f8fbff;
     font-family: 'Poppins', sans-serif;
 }
+.sub-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    line-height: 2.8rem;
+}
 
 /* =========================
    Header
@@ -12,9 +18,10 @@ body {
 header {
     width: 100%;
     background-color: rgba(95, 95, 222, 0.8);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
         url('../images/textures/dotted_texture.png');
-    background-size: cover;
+    background-size: auto;
+    background-repeat: repeat;
     background-position: center;
     background-blend-mode: overlay;
 }
@@ -29,10 +36,11 @@ header .navbar {
 ========================= */
 .hero-section {
     width: 100%;
-    background-color: rgba(95, 95, 222, 0.8) !important;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    background-color: rgba(95, 95, 222, 0.8);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
         url('../images/textures/dotted_texture.png');
-    background-size: cover;
+    background-size: auto;
+    background-repeat: repeat;
     background-position: center;
     background-blend-mode: overlay;
     color: #eee;
@@ -65,6 +73,10 @@ header .navbar {
     border-radius: 50px;
     border: none;
     transition: background-color 0.3s ease-in-out;
+}
+.btn-custom a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .btn-custom:hover {
@@ -304,10 +316,10 @@ header .navbar {
 }
 
 .tags span {
-    background: #f3f6fd;
-    padding: 8px 16px;
-    border-radius: 30px;
-    font-size: 0.85rem;
+    padding: 5px 16px;
+    border-radius: 10px;
+    font-size: 0.80rem;
+    background: #f4efff;
 }
 
 /* =========================
@@ -335,6 +347,7 @@ header .navbar {
 .project-card {
     background: #fff;
     transition: all 0.3s ease;
+    min-height: 330px;
 }
 
 .project-card:hover {
@@ -347,7 +360,7 @@ header .navbar {
 }
 
 .project-card:hover img {
-    transform: scale(1.05);
+    transform: scale(1.09);
 }
 
 /* Buttons */
@@ -355,9 +368,77 @@ header .navbar {
     transition: all 0.3s ease;
 }
 
+
+/* =========================
+   Hire Me Section
+========================= */
+
+
+.portfolio-box{
+    background-color: rgba(95, 95, 222, 0.8);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+        url('../images/textures/dotted_texture.png');
+    background-size: auto;
+    background-repeat: repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+    max-height: 500px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.portfolio-box::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    url("../images/textures/hero_right_top_curveline.png") top right no-repeat,
+    url("../images/textures/left_bottom_curveline.png") bottom left no-repeat;
+    background-size: auto;
+    opacity:0.5;
+}
+
+.portfolio-box img{
+    max-height:500px;
+    margin-top: -100px;
+    position: relative;
+}
+
+.portfolio-box .small-device{
+    display:none;
+}
+
+
 /* =========================
    Responsive
 ========================= */
+@media(max-width:991px){
+
+    .portfolio-box{
+
+        padding:50px 35px;
+        text-align:center;
+        margin-top: 0px;
+        max-height: 550px;
+    }
+
+    .portfolio-box img{
+        margin-top:40px;
+        max-height:380px;
+    }
+
+    /* display in small devices */
+    .portfolio-box .small-device{
+    display:block;
+    align-items:center;
+    } 
+    /* hide in small devices */
+    .portfolio-box .large-device{
+    display:none;
+    }
+
+}
+
 @media (max-width: 768px) {
 
     .title {
@@ -385,4 +466,6 @@ header .navbar {
     header .navbar .navbar-brand h1 {
         font-size: 6rem !important;
     }
+    
 }
+
