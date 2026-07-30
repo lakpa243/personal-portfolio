@@ -25,6 +25,24 @@ body {
 }
 
 /* =========================
+   Reveal css effect
+========================= */
+.reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity .7s ease, transform .7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: none;
+}
+
+.delay-1 {
+    transition-delay: .14s;
+}
+
+/* =========================
    Header
 ========================= */
 header {
@@ -47,21 +65,21 @@ header .navbar .navbar-brand .logo {
 }
 
 
-header .grid-dots, .hire-me .grid-dots {
+header .grid-dots{
     width: 100%;
     height: 100%;
     position: absolute;
-    opacity: .1;
-    background-image: radial-gradient(#a2a4fc 1.4px, transparent 1.5px);
+    opacity: 0.1;
+    background-image: radial-gradient(#a2a4fc 1.4px, transparent 0.2px);
     background-size: 15px 15px;  
 }
 
-header .dots-left, .hire-me .dots-left {
+header .dots-left{
     left: 0;
     top: 0px;
 }
 
-header .dots-right, .hire-me .dots-right {
+header .dots-right {
     right: 0;
     top: 0px;
 }
@@ -70,7 +88,7 @@ header .dots-right, .hire-me .dots-right {
    Hero Section
 ========================= */
 
-.hero-section .lakpa-bio {
+header .hero-section .lakpa-bio {
     font-size: 1.2rem;
 }
 
@@ -78,12 +96,17 @@ header .hero-texture {
     opacity: 0.5;
 }
 
-.hero-section{
+header .hero-section{
     position: relative;
 }
 
-.lakpa-image {
-    height: 400px;
+header .hero-section .lakpa-intro{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+header .hero-section .lakpa-intro span{
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
 /* =========================
@@ -153,9 +176,9 @@ header .hero-texture {
 }
 
 /* =========================
-   About Section
+   Why Me Section
 ========================= */
-.about-section {
+.why-me-section {
     padding: 80px 40px;
     position: relative;
     overflow: hidden;
@@ -169,7 +192,7 @@ header .hero-texture {
     background-size: 350px, 320px;
 }
 
-.about-section>* {
+.why-me-section>* {
     position: relative;
     z-index: 1;
 }
@@ -362,13 +385,6 @@ header .hero-texture {
     background: #f4efff;
 }
 
-/* =========================
-   Utilities
-========================= */
-.lakpa-image {
-    height: 400px;
-}
-
 
 /* =========================
    Portfolio Section
@@ -419,6 +435,7 @@ header .hero-texture {
     max-height: 500px;
     margin-top: 100px;
     position: relative;
+    isolation: isolate;
 }
 
 .hire-me::before {
@@ -430,6 +447,7 @@ header .hero-texture {
         url("../images/textures/left_bottom_curveline.png") bottom left no-repeat;
     background-size: auto;
     opacity: 0.5;
+    z-index: -2;
 }
 
 .hire-me img {
@@ -549,13 +567,16 @@ hr {
         margin: 0px;
         padding: 0px;
     }
-
+    
     .title {
         font-size: 2.2rem;
     }
 
+    header .hero-section .lakpa-image {
+        margin-top: 50px;
+    }
     
-    .about-section {
+    .why-me-section {
         background-size: 180px, 180px;
     }
 
