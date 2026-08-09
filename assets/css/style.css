@@ -185,6 +185,81 @@ header .hero-section .lakpa-intro span{
  transform: translate3d(100%, 0, 0);
 }
 
+
+/* =========================
+   About me Section
+========================= */
+
+.overview-section {
+    position: relative;
+    z-index: 5;
+    margin-top: -66px;
+}
+
+.overview-panel,
+.details-section {
+    background: #ffffffef;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 13px 40px #2724540b;
+}
+
+.overview-panel {
+    padding: 28px 48px;
+}
+
+.section-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 30px;
+    position: relative;
+}
+
+  .journey {
+        padding-bottom: 25px;
+        border-bottom: 1px solid var(--line);
+    }
+
+     .skill-summary {
+        border: 0 !important;
+        padding-top: 25px;
+    }
+
+    .section-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 30px;
+    position: relative;
+}
+
+.metric {
+    min-height: 95px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #eeeef8;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 5px 14px #1d1d3b09;
+    padding-bottom: 10px;
+}
+
+.metric i {
+    font-size: 22px;
+    color: var(--primary-color);
+}
+
+.metric b {
+    font: 700 25px/1.2 "Poppins", sans-serif;
+    margin: 5px 0 2px;
+}
+
+.metric span {
+    font-size: 12px;
+}
+
+
 /* =========================
    Skills Section
 ========================= */
@@ -668,6 +743,19 @@ hr {
 
      header .hero-section .lakpa-image {
         height: 270px;
+    }
+  .overview-panel {
+        padding: 28px;
+    }
+
+    .journey {
+        padding-bottom: 25px;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .skill-summary {
+        border: 0 !important;
+        padding-top: 25px;
     }
 
 
