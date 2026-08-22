@@ -54,9 +54,6 @@ header {
     overflow: hidden;
 }
 
-header .navbar {
-    z-index: 1;
-}
 
 header .navbar .navbar-brand .logo {
     max-height: 100px;
@@ -220,7 +217,7 @@ header .hero-section .lakpa-intro span{
         border-bottom: 1px solid var(--line);
     }
 
-     .skill-summary {
+     .experience-summary {
         border: 0 !important;
         padding-top: 25px;
     }
@@ -753,7 +750,7 @@ hr {
         border-bottom: 1px solid var(--line);
     }
 
-    .skill-summary {
+    .experience-summary {
         border: 0 !important;
         padding-top: 25px;
     }
