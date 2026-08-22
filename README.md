@@ -41,7 +41,6 @@ project/
 ├── assets/
 │   ├── bootstrap/
 │   ├── css/
-│   ├── fonts/
 │   ├── images/
 │   └── js/
 ├── index.html
