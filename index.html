@@ -75,6 +75,11 @@
     </div>
   </div>
 
+  <!-- preloader code ends here -->
+
+  <!-- Scroll to top button  -->
+   <button id="backToTop" aria-label="Back to top"> ↑ </button>
+
   <!-- Header Section -->
   <header>
     <!-- Grid texture -->
@@ -115,11 +120,58 @@
             </li>
           </ul>
           <span class="d-flex">
-            <button class="btn btn-custom" type="submit"><span>Download CV</span></button>
+            <button class="btn btn-custom" 
+            data-bs-toggle="modal" 
+            data-bs-target="#cvModal">
+            <span>Download CV</span></button>
           </span>
         </div>
       </div>
     </nav>
+
+    <!-- CV Modal -->
+<div
+  class="modal fade"
+  id="cvModal"
+  tabindex="-1"
+  aria-labelledby="cvModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="cvModalLabel">
+          Download My CV
+        </h5>
+
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <p>
+          To request a CV please send me an email.
+        </p>
+
+        <a
+          href="mailto:lakpa243@gmail.com"
+          class="btn btn-primary"
+        >
+          <i class="bi bi-envelope"></i>
+          Request CV
+        </a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- CV Modal code ends here -->
 
     <!-- Hero section Bio Banner -->
 
@@ -135,7 +187,9 @@
             mastering React to build more dynamic, component-driven applications. </p>
           <a href="#portfolio" class="btn btn-custom btn-md"><span>Portfolio</span></a>
           <a href="#" class="btn btn-outline-light btn-md ms-3 ms-md-3">
-            <i class="bi bi-play">My Intro</i> </a>
+            <i class="bi bi-play" 
+            data-bs-toggle="modal"
+            data-bs-target="#videoModal" >My Intro</i> </a>
         </div>
         <div class="col-md-4 text-center pb-5 lakpa-image clearfix order-1 order-lg-2 reveal delay-1">
           <img src="assets/images/lakpa.png" class="img-fluid float-end"
@@ -145,6 +199,39 @@
     </div>
   </header>
 
+  <!-- Intro Video Modal -->
+<div
+  class="modal fade"
+  id="videoModal"
+  tabindex="-1"
+  aria-labelledby="videoModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="videoModalLabel">Coming soon ...</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+
+      <div class="modal-body p-0">
+        <video id="introVideo" class="w-100" controls>
+          <!-- <source src="https://www.youtube.com/watch?v=ZY7IikY6EvE" type="video/mp4"> -->
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Intro Video Modal code ends here -->
 
   <main>
     <!-- About me section -->
@@ -260,7 +347,9 @@
                 architecture that ensures your platform stays fast and secure for years to come.</p>
             </div>
 
-            <button class="btn btn-custom mt-3"><span>Download CV →</span></button>
+            <button class="btn btn-custom mt-3" data-bs-toggle="modal" 
+            data-bs-target="#cvModal">
+            <span>Download CV →</span></button>
           </div>
         </div>
       </div>
@@ -632,14 +721,24 @@
     </div>
   </footer>
 
+
   <script src="assets/bootstrap-5.3.8/js/bootstrap.bundle.min.js"></script>
   <!-- Ai Script -->
   <script type="module" src="assets/js/reveal.js"></script>
 
-  <!-- Swiper JS for skill section-->
+  <!-- Scroll to top button script -->
+  <script src="assets/js/scrollToTop.js"></script>
+
+  <!-- Preloader script to handle the preloader -->
   <script src="assets/js/preloader.js"></script>
+
+  <!-- Intro model Js -->
+  <script src="assets/js/introModel.js"></script>
+
+  <!-- Swiper JS for skill section-->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/js/skillsSlider.js"></script>
+
   <!-- Portfolio Section JS -->
   <script src="assets/js/portfolio.js"></script>
 </body>
