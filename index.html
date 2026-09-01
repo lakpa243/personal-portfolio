@@ -48,6 +48,37 @@
 </head>
 
 <body>
+  <!-- PRELOADER -->
+<div id="preloader">
+  <div class="loader-content">
+
+    <!-- Preloader Image -->
+    <img
+      src="assets/images/lakpa-logo.png"
+      alt="Loading..."
+      id="loader-image"
+      onerror="this.style.display='none'; document.getElementById('loader-text').style.display='block';"
+    >
+
+    <!-- Text fallback -->
+    <div id="loader-text">
+      <span>Loading</span><span class="dots">...</span>
+    </div>
+
+    <!-- Progress indicator -->
+    <div class="loader-bar">
+      <div class="loader-progress"></div>
+    </div>
+
+    <!-- Error message -->
+    <div id="loader-error">
+      <p>Having trouble loading the website.</p>
+      <button onclick="location.reload()">Try Again</button>
+    </div>
+
+  </div>
+</div>
+
   <!-- Header Section -->
   <header>
     <!-- Grid texture -->
@@ -606,6 +637,7 @@
   <script type="module" src="assets/js/reveal.js"></script>
 
   <!-- Swiper JS for skill section-->
+   <script src="assets/js/preloader.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/js/skillsSlider.js"></script>
   <!-- Portfolio Section JS -->

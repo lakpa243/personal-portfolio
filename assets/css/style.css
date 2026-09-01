@@ -17,6 +17,162 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* =========================
+     PRELOADER
+  ========================= */
+
+  #preloader {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(3, 3, 175);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+    opacity: 1;
+    visibility: visible;
+    transition:
+      opacity 0.6s ease,
+      visibility 0.6s ease;
+  }
+
+  /* Hide preloader */
+  #preloader.loaded {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .loader-content {
+    width: min(300px, 80%);
+    text-align: center;
+  }
+
+  /* =========================
+     IMAGE
+  ========================= */
+
+  #loader-image {
+    width: 320px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 30px;
+    animation: loaderPulse 1.5s ease-in-out infinite;
+  }
+
+  @keyframes loaderPulse {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    50% {
+      transform: scale(0.92);
+      opacity: 0.6;
+    }
+  }
+
+  /* =========================
+     TEXT FALLBACK
+  ========================= */
+
+  #loader-text {
+    display: none;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  .dots {
+    display: inline-block;
+    width: 25px;
+    text-align: left;
+    animation: dots 1.4s infinite;
+  }
+
+  @keyframes dots {
+    0% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  /* =========================
+     LOADING BAR
+  ========================= */
+
+  .loader-bar {
+    width: 100%;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.15);
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .loader-progress {
+    height: 100%;
+    width: 30%;
+    background: #ffffff;
+    border-radius: 10px;
+    animation: loading 1.3s ease-in-out infinite;
+  }
+
+  @keyframes loading {
+    0% {
+      transform: translateX(-120%);
+    }
+
+    100% {
+      transform: translateX(400%);
+    }
+  }
+
+  /* =========================
+     ERROR MESSAGE
+  ========================= */
+
+  #loader-error {
+    display: none;
+    margin-top: 25px;
+    color: #aaa;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+  }
+
+  #loader-error p {
+    margin-bottom: 15px;
+  }
+
+  #loader-error button {
+    border: 0;
+    padding: 10px 18px;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  #loader-error button:hover {
+    transform: translateY(-2px);
+  }
+
+  /* Preloader css ends here */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
 }
@@ -799,7 +955,10 @@ hr {
     }
 
     header .hero-section .lakpa-image {
-        height: 400px;
+        margin-top: 50px !important;
+        margin: auto;
+        height: 200px;
+        width: 200px;
     }
     
     .why-me-section {
