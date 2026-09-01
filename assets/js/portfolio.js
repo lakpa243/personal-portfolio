@@ -1,4 +1,4 @@
- function setFeatured(card) {
+function setFeatured(card) {
 
   // Get data from clicked card
   const title = card.getAttribute("data-title");

@@ -49,35 +49,31 @@
 
 <body>
   <!-- PRELOADER -->
-<div id="preloader">
-  <div class="loader-content">
+  <div id="preloader">
+    <div class="loader-content">
 
-    <!-- Preloader Image -->
-    <img
-      src="assets/images/lakpa-logo.png"
-      alt="Loading..."
-      id="loader-image"
-      onerror="this.style.display='none'; document.getElementById('loader-text').style.display='block';"
-    >
+      <!-- Preloader Image -->
+      <img src="assets/images/lakpa-logo.png" alt="Loading..." id="loader-image"
+        onerror="this.style.display='none'; document.getElementById('loader-text').style.display='block';">
 
-    <!-- Text fallback -->
-    <div id="loader-text">
-      <span>Loading</span><span class="dots">...</span>
+      <!-- Text fallback -->
+      <div id="loader-text">
+        <span>Loading</span><span class="dots">...</span>
+      </div>
+
+      <!-- Progress indicator -->
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+
+      <!-- Error message -->
+      <div id="loader-error">
+        <p>Having trouble loading the website.</p>
+        <button onclick="location.reload()">Try Again</button>
+      </div>
+
     </div>
-
-    <!-- Progress indicator -->
-    <div class="loader-bar">
-      <div class="loader-progress"></div>
-    </div>
-
-    <!-- Error message -->
-    <div id="loader-error">
-      <p>Having trouble loading the website.</p>
-      <button onclick="location.reload()">Try Again</button>
-    </div>
-
   </div>
-</div>
 
   <!-- Header Section -->
   <header>
@@ -312,7 +308,7 @@
 
               <div class="line line-purple"></div>
 
-              <p class="text-secondary">
+              <p>
                 I understand your goals, audience and project requirements to build
                 a clear roadmap before development begins.
               </p>
@@ -345,7 +341,7 @@
 
               <div class="line line-blue"></div>
 
-              <p class="text-secondary">
+              <p>
                 Modern UI/UX designs focused on usability, responsiveness and
                 beautiful visual experiences.
               </p>
@@ -378,7 +374,7 @@
 
               <div class="line line-green"></div>
 
-              <p class="text-secondary">
+              <p>
                 Improve speed, SEO, accessibility and performance to maximize
                 search visibility and conversions.
               </p>
@@ -409,15 +405,15 @@
         <div class="row align-items-end mb-5 reveal">
 
           <div class="col-md-7 portfolio-featured" data-aos="fade-up">
-            <p class="text-primary fw-semibold">My Work</p>
+            <p class="fw-semibold">My Work</p>
             <h2 class="sub-heading">Featured Portfolio</h2>
-            <p class="text-muted">
+            <p class="description">
               A collection of projects where I design and build modern web experiences.
             </p>
           </div>
 
 
-          <!-- All Project / I shall update this when I have more projects to showcase -->
+          <!-- All Project / I shall update this when I add more projects to showcase -->
 
           <!-- <div class="col-md-5 text-md-end" data-aos="fade-up" data-aos-delay="100">
           <a href="#portfolio" class="btn btn-outline-primary rounded-pill px-4">
@@ -449,7 +445,7 @@
                     Convenience Store
                   </h3>
 
-                  <p class="text-muted" id="featured-desc">
+                  <p id="featured-desc">
                     Quick Track Inc, a multi-store convenience retailer.
                   </p>
 
@@ -485,7 +481,7 @@
               <img src="assets/images/portfolio/quicktrackinc.png" class="img-fluid" alt="QuickTrack Inc">
               <div class="p-3">
                 <h4 class="fw-bold">QuickTrack Inc</h4>
-                <p class="text-muted small">Multi store convenience shop website</p>
+                <p>Multi store convenience shop website</p>
               </div>
 
             </div>
@@ -501,7 +497,7 @@
                 alt="Enchantment Beauty Salon">
               <div class="p-3">
                 <h4 class="fw-bold">Enchantment Beauty Salon</h4>
-                <p class="text-muted small">5 pages static website</p>
+                <p>5 pages static website</p>
               </div>
 
             </div>
@@ -517,7 +513,7 @@
               <img src="assets/images/portfolio/friscolimousine.png" class="img-fluid" alt="Frisco Limousine">
               <div class="p-3">
                 <h4 class="fw-bold">Frisco Limousine</h4>
-                <p class="text-muted small">Limousine service website</p>
+                <p>Limousine service website</p>
               </div>
 
             </div>
@@ -547,8 +543,9 @@
               <span class="text-warning"> Let's build something amazing together! </span>
             </p>
 
-              <span><a href="mailto:lakpa243@gmail.com" class="btn btn-primary"><i class="bi bi-send"></i> Let's Talk</a></span>
-          
+            <span><a href="mailto:lakpa243@gmail.com" class="btn btn-primary"><i class="bi bi-send"></i> Let's
+                Talk</a></span>
+
 
           </div>
 
@@ -612,10 +609,13 @@
           <p><i class="bi bi-geo-alt"></i> GU15 3HQ, Camberley, Surrey, UK</p>
 
           <div class="social-icons mt-4">
-            <a href="https://www.facebook.com/LakpaIsSherpa/" alt="Facebook" target="_blank"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.linkedin.com/in/lakpaissherpa/" alt="LinkedIn" target="_blank"><i class="bi bi-linkedin"></i></a>
-            <a href="https://github.com/lakpa243/" alt="GitHub" target="_blank"><i class="bi bi-github"></i></a>
-            <a href="https://www.instagram.com/lakpaissherpa" alt="Instagram" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/LakpaIsSherpa/" aria-label="Facebook" target="_blank"><i
+                class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/lakpaissherpa/" aria-label="LinkedIn" target="_blank"><i
+                class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/lakpa243/" aria-label="GitHub" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="https://www.instagram.com/lakpaissherpa" aria-label="Instagram" target="_blank"><i
+                class="bi bi-instagram"></i></a>
           </div>
         </div>
 
@@ -637,7 +637,7 @@
   <script type="module" src="assets/js/reveal.js"></script>
 
   <!-- Swiper JS for skill section-->
-   <script src="assets/js/preloader.js"></script>
+  <script src="assets/js/preloader.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="assets/js/skillsSlider.js"></script>
   <!-- Portfolio Section JS -->

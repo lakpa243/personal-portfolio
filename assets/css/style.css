@@ -21,7 +21,7 @@ body {
      PRELOADER
   ========================= */
 
-  #preloader {
+#preloader {
     position: fixed;
     inset: 0;
     width: 100%;
@@ -34,128 +34,130 @@ body {
     opacity: 1;
     visibility: visible;
     transition:
-      opacity 0.6s ease,
-      visibility 0.6s ease;
-  }
+        opacity 0.6s ease,
+        visibility 0.6s ease;
+}
 
-  /* Hide preloader */
-  #preloader.loaded {
+/* Hide preloader */
+#preloader.loaded {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-  }
+}
 
-  .loader-content {
+.loader-content {
     width: min(300px, 80%);
     text-align: center;
-  }
+}
 
-  /* =========================
+/* =========================
      IMAGE
   ========================= */
 
-  #loader-image {
+#loader-image {
     width: 320px;
     max-width: 100%;
     height: auto;
     object-fit: contain;
     margin-bottom: 30px;
     animation: loaderPulse 1.5s ease-in-out infinite;
-  }
+}
 
-  @keyframes loaderPulse {
-    0%, 100% {
-      transform: scale(1);
-      opacity: 1;
+@keyframes loaderPulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 1;
     }
 
     50% {
-      transform: scale(0.92);
-      opacity: 0.6;
+        transform: scale(0.92);
+        opacity: 0.6;
     }
-  }
+}
 
-  /* =========================
+/* =========================
      TEXT FALLBACK
   ========================= */
 
-  #loader-text {
+#loader-text {
     display: none;
     color: #ffffff;
     font-family: Arial, sans-serif;
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 30px;
-  }
+}
 
-  .dots {
+.dots {
     display: inline-block;
     width: 25px;
     text-align: left;
     animation: dots 1.4s infinite;
-  }
+}
 
-  @keyframes dots {
+@keyframes dots {
     0% {
-      opacity: 0;
+        opacity: 0;
     }
 
     50% {
-      opacity: 1;
+        opacity: 1;
     }
 
     100% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
+}
 
-  /* =========================
+/* =========================
      LOADING BAR
   ========================= */
 
-  .loader-bar {
+.loader-bar {
     width: 100%;
     height: 3px;
     background: rgba(255, 255, 255, 0.15);
     overflow: hidden;
     border-radius: 10px;
-  }
+}
 
-  .loader-progress {
+.loader-progress {
     height: 100%;
     width: 30%;
     background: #ffffff;
     border-radius: 10px;
     animation: loading 1.3s ease-in-out infinite;
-  }
+}
 
-  @keyframes loading {
+@keyframes loading {
     0% {
-      transform: translateX(-120%);
+        transform: translateX(-120%);
     }
 
     100% {
-      transform: translateX(400%);
+        transform: translateX(400%);
     }
-  }
+}
 
-  /* =========================
+/* =========================
      ERROR MESSAGE
   ========================= */
 
-  #loader-error {
+#loader-error {
     display: none;
     margin-top: 25px;
     color: #aaa;
     font-family: Arial, sans-serif;
     font-size: 14px;
-  }
+}
 
-  #loader-error p {
+#loader-error p {
     margin-bottom: 15px;
-  }
+}
 
-  #loader-error button {
+#loader-error button {
     border: 0;
     padding: 10px 18px;
     border-radius: 6px;
@@ -165,15 +167,20 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: transform 0.2s ease;
-  }
+}
 
-  #loader-error button:hover {
+#loader-error button:hover {
     transform: translateY(-2px);
-  }
+}
 
-  /* Preloader css ends here */
+/* Preloader css ends here */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -181,10 +188,12 @@ h1 {
     font-size: 3rem;
     line-height: 3.5rem;
 }
+
 h2 {
     font-size: 2.5rem;
     line-height: 3rem;
 }
+
 h3 {
     font-size: 2rem;
     line-height: 2.5rem;
@@ -244,16 +253,16 @@ header .navbar .navbar-brand .logo {
 }
 
 
-header .grid-dots{
+header .grid-dots {
     width: 100%;
     height: 100%;
     position: absolute;
     opacity: 0.1;
     background-image: radial-gradient(#a2a4fc 1.4px, transparent 0.2px);
-    background-size: 15px 15px;  
+    background-size: 15px 15px;
 }
 
-header .dots-left{
+header .dots-left {
     left: 0;
     top: 0px;
 }
@@ -277,32 +286,33 @@ header .hero-texture {
     opacity: 0.5;
 }
 
-header .hero-section{
+header .hero-section {
     position: relative;
 }
 
-header .hero-section .lakpa-intro{
+header .hero-section .lakpa-intro {
     font-size: 2.5rem;
     font-weight: 700;
 }
-header .hero-section .lakpa-intro span{
+
+header .hero-section .lakpa-intro span {
     font-size: 1.8rem;
     font-weight: 500;
 }
 
- header .hero-section .lakpa-image {
-        border: rgba(255, 255, 255, 0.1) solid 1px;
-        border-radius: 10%;
-        padding: 0px;
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-        height: 350px;
-        overflow: hidden;
-    }
+header .hero-section .lakpa-image {
+    border: rgba(255, 255, 255, 0.1) solid 1px;
+    border-radius: 10%;
+    padding: 0px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    height: 350px;
+    overflow: hidden;
+}
 
-    header .hero-section .lakpa-image img {
-        width:auto;
-        object-fit: cover;
-    }
+header .hero-section .lakpa-image img {
+    width: auto;
+    object-fit: cover;
+}
 
 /* =========================
    Buttons
@@ -310,32 +320,33 @@ header .hero-section .lakpa-intro span{
 
 
 .btn-custom {
- outline: none;
- cursor: pointer;
- border: none;
- padding: 0.5rem 1.5rem;
- margin: 0;
- font-family: inherit;
- font-size: inherit;
- position: relative;
- display: inline-block;
- letter-spacing: 0.05rem;
- font-weight: 700;
- border-radius: 10px;
- overflow: hidden;
- background: linear-gradient(90deg, #5745f8, #1e95f7);
- color: ghostwhite;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    border-radius: 10px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #5745f8, #1e95f7);
+    color: ghostwhite;
 }
 
 .btn-custom span {
- position: relative;
- z-index: 10;
- transition: color 0.4s;
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
 }
 
 .btn-custom:hover span {
- color: #eee;
+    color: #eee;
 }
+
 .btn-custom span a {
     text-decoration: none;
     color: ghostwhite;
@@ -343,25 +354,25 @@ header .hero-section .lakpa-intro span{
 
 .btn-custom::before,
 .btn-custom::after {
- position: absolute;
- top: 0;
- left: 0;
- width: 100%;
- height: 100%;
- z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
 }
 
 .btn-custom::before {
- content: "";
- background: var(--secondary-color);
- width: 120%;
- left: -10%;
- transform: skew(30deg);
- transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+    content: "";
+    background: var(--secondary-color);
+    width: 120%;
+    left: -10%;
+    transform: skew(30deg);
+    transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
 }
 
 .btn-custom:hover::before {
- transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
 }
 
 
@@ -394,17 +405,17 @@ header .hero-section .lakpa-intro span{
     position: relative;
 }
 
-  .journey {
-        padding-bottom: 25px;
-        border-bottom: 1px solid var(--line);
-    }
+.journey {
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--line);
+}
 
-     .experience-summary {
-        border: 0 !important;
-        padding-top: 25px;
-    }
+.experience-summary {
+    border: 0 !important;
+    padding-top: 25px;
+}
 
-    .section-title {
+.section-title {
     font-size: 16px;
     font-weight: 700;
     margin: 0 0 30px;
@@ -587,7 +598,7 @@ header .hero-section .lakpa-intro span{
 }
 
 .description {
-    color: #7b8098;
+    color: #2b2b2b;
     max-width: 650px;
     margin: auto;
 }
@@ -846,48 +857,49 @@ hr {
 .skills {
     animation: skills 2s ease-in 0s 1 normal forwards;
 }
+
 @keyframes skills {
-	0% {
-		animation-timing-function: ease-in;
-		opacity: 0;
-		transform: translateY(250px);
-	}
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 0;
+        transform: translateY(250px);
+    }
 
-	38% {
-		animation-timing-function: ease-out;
-		opacity: 1;
-		transform: translateY(0);
-	}
+    38% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0);
+    }
 
-	55% {
-		animation-timing-function: ease-in;
-		transform: translateY(65px);
-	}
+    55% {
+        animation-timing-function: ease-in;
+        transform: translateY(65px);
+    }
 
-	72% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
+    72% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
 
-	81% {
-		animation-timing-function: ease-in;
-		transform: translateY(28px);
-	}
+    81% {
+        animation-timing-function: ease-in;
+        transform: translateY(28px);
+    }
 
-	90% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
+    90% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
 
-	95% {
-		animation-timing-function: ease-in;
-		transform: translateY(8px);
-	}
+    95% {
+        animation-timing-function: ease-in;
+        transform: translateY(8px);
+    }
 
-	100% {
-		animation-timing-function: ease-out;
-		transform: translateY(0);
-	}
+    100% {
+        animation-timing-function: ease-out;
+        transform: translateY(0);
+    }
 }
 
 
@@ -921,10 +933,11 @@ hr {
         display: none;
     }
 
-     header .hero-section .lakpa-image {
+    header .hero-section .lakpa-image {
         height: 270px;
     }
-  .overview-panel {
+
+    .overview-panel {
         padding: 28px;
     }
 
@@ -949,7 +962,7 @@ hr {
         margin: 0px;
         padding: 0px;
     }
-    
+
     .title {
         font-size: 2.2rem;
     }
@@ -960,7 +973,7 @@ hr {
         height: 300px;
         width: 300px;
     }
-    
+
     .why-me-section {
         background-size: 180px, 180px;
     }
